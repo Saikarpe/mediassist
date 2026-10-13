@@ -1,0 +1,109 @@
+{
+  "dataset": {
+    "pairs": 14978,
+    "train": 11982,
+    "test": 2996,
+    "question_types": 15,
+    "class_distribution": {
+      "information": 3822,
+      "symptoms": 2683,
+      "treatment": 2213,
+      "inheritance": 1382,
+      "frequency": 1120,
+      "genetic changes": 1087,
+      "causes": 657,
+      "exams and tests": 611,
+      "research": 369,
+      "outlook": 354,
+      "susceptibility": 245,
+      "prevention": 183,
+      "considerations": 133,
+      "stages": 76,
+      "complications": 43
+    }
+  },
+  "qtype_classification": {
+    "Naive Bayes": {
+      "accuracy": 0.9246,
+      "macro_f1": 0.892,
+      "weighted_f1": 0.9229,
+      "train_time_s": 0.77
+    },
+    "Linear SVM": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "train_time_s": 1.29
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9993,
+      "macro_f1": 0.9979,
+      "weighted_f1": 0.9993,
+      "train_time_s": 4.26
+    }
+  },
+  "qtype_per_class_f1": {
+    "causes": 1.0,
+    "complications": 1.0,
+    "considerations": 1.0,
+    "exams and tests": 0.996,
+    "frequency": 1.0,
+    "genetic changes": 1.0,
+    "information": 1.0,
+    "inheritance": 1.0,
+    "outlook": 1.0,
+    "prevention": 0.974,
+    "research": 1.0,
+    "stages": 1.0,
+    "susceptibility": 1.0,
+    "symptoms": 1.0,
+    "treatment": 0.999
+  },
+  "retrieval_examples": [
+    {
+      "original": "What are the symptoms of Gamma heavy chain disease ?",
+      "paraphrased": "what signs are seen gamma heavy chain illness?"
+    },
+    {
+      "original": "What are the treatments for Cystocele ?",
+      "paraphrased": "doctors treat cystocele?"
+    },
+    {
+      "original": "What are the symptoms of Chondrodysplasia, Grebe type ?",
+      "paraphrased": "what signs are seen in chondrodysplasia grebe type?"
+    },
+    {
+      "original": "What are the treatments for Duchenne and Becker muscular dystrophy ?",
+      "paraphrased": "how doctors treat duchenne and becker muscular dystrophy?"
+    },
+    {
+      "original": "What are the treatments for X-linked infantile spasm syndrome ?",
+      "paraphrased": "doctors treat x-linked infantile spasm syndrome?"
+    }
+  ],
+  "retrieval_qa": {
+    "TF-IDF (word)": {
+      "hit@1": 0.394,
+      "hit@3": 0.702,
+      "hit@5": 0.887,
+      "mrr": 0.5669,
+      "topic_hit@1": 0.9345,
+      "answer_token_f1": 0.543,
+      "avg_latency_ms": 5.66
+    },
+    "Hybrid TF-IDF (word + char)": {
+      "hit@1": 0.4085,
+      "hit@3": 0.7275,
+      "hit@5": 0.892,
+      "mrr": 0.5841,
+      "topic_hit@1": 0.952,
+      "answer_token_f1": 0.5538,
+      "avg_latency_ms": 66.58
+    }
+  },
+  "qtype_on_paraphrased_accuracy": 0.433,
+  "agent_planner": {
+    "requests": 20,
+    "exact_plan_accuracy": 1.0
+  }
+}

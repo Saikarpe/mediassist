@@ -1,0 +1,27 @@
+CITY CARE DIAGNOSTICS - LAB REPORT
+Patient: Rahul Sharma        Age: 48        Date: 2026-10-05
+
+COMPLETE BLOOD COUNT
+Hemoglobin: 11.4 g/dL
+WBC Count: 7.2 x10^3/uL
+Platelet Count: 240 x10^3/uL
+
+DIABETES PROFILE
+Fasting Blood Sugar: 128 mg/dL
+HbA1c: 6.6 %
+
+LIPID PROFILE
+Total Cholesterol: 232 mg/dL
+LDL Cholesterol: 158 mg/dL
+HDL Cholesterol: 36 mg/dL
+Triglycerides: 210 mg/dL
+
+KIDNEY / THYROID
+Creatinine: 1.0 mg/dL
+TSH: 2.1 mIU/L
+Vitamin D: 18 ng/mL
+
+VITALS
+Blood Pressure: 142/92 mmHg
+Pulse: 78 bpm
+BMI: 28.3
